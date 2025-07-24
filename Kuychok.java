@@ -1,8 +1,23 @@
-public class Kuychok {
+
+import javax.swing.JFrame;
+
+public class Kuychok extends JFrame {
+
+    public Kuychok() {
+        Ngo();
+    }
+
+    public void Ngo() {
+        setSize(300, 300);
+        setTitle("Kuy Chok");
+        setLocationRelativeTo(null);
+        setLayout(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
     public static void main(String[] args) {
-        System.out.println("Kuy chok");
-        for (int i = 0; i < 100; i++) {
-            System.out.println("Kuy a");
-        }
+        new Kuychok();
+
     }
 }
